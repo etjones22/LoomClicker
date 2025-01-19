@@ -24,6 +24,7 @@
     <ClCompile Include="ui\ui.cc" />
     <ClCompile Include="Clicker\Autoclicker.cpp" />
     <ClCompile Include="Clicker\PatternManager.cpp" />
+    <ClCompile Include="Clicker\Updater\Updater.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h">
