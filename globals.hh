@@ -41,6 +41,10 @@ public:
     bool useCustomPattern = false; // Option to use custom click pattern
     int currentPage = 0; // 0 = Main Page, 1 = Recording/Settings Page
 
+    // Randomization settings
+    int randomPositionRange = 0; // Variability in click positions (pixels)
+    int randomDelayJitter = 0;   // Jitter in delay between clicks (ms)
+
 };
 
 inline c_globals globals;

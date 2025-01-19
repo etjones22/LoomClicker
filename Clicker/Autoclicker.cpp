@@ -7,12 +7,21 @@
 #include <atomic>
 #include <iostream>
 #include <chrono>
+#include <fstream>
+#include <nlohmann/json.hpp> 
+#include "../Clicker/PatternManager.h"
+
 
 // Atomic variables for thread safety
 std::atomic<bool> isRunning = true;
 
 std::random_device rd;
 std::mt19937 gen(rd());
+
+
+using json = nlohmann::json;
+
+
 
 float Randomization(int min, int max, int cps) {
     std::uniform_int_distribution<int> dis(min, max);
@@ -42,9 +51,17 @@ void processRightClick() {
 }
 
 void processClickEvents() {
-    processLeftClick();
-    processRightClick();
+    if (globals.useCustomPattern) {
+        if (!globals.playingBack) {
+            std::thread(playPattern).detach(); // Play custom pattern
+        }
+    }
+    else {
+        processLeftClick();
+        processRightClick();
+    }
 }
+
 
 void autoclicker() {
     while (isRunning) {

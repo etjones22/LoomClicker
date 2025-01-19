@@ -3,10 +3,15 @@
 #include <random>
 
 void clickerThread();
+void playPattern();
+
+
 inline HHOOK hookdoMouse;
 inline bool pressedclicker;
 inline bool mouseDown;
 inline bool othermouse;
+
+
 
 
 enum class MouseClick : int
