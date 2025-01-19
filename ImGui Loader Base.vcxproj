@@ -124,6 +124,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>C:\Users\hoppe\Desktop\ImGui-Loader-Base-master\vcpkg/installed/x64-windows/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -133,6 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Clicker\Autoclicker.cpp" />
+    <ClCompile Include="Clicker\PatternManager.cpp" />
     <ClCompile Include="ui\ui.cc" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
@@ -145,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clicker\Autoclicker.h" />
+    <ClInclude Include="Clicker\PatternManager.h" />
     <ClInclude Include="globals.hh" />
     <ClInclude Include="ui\ui.hh" />
     <ClInclude Include="imgui\imconfig.h" />

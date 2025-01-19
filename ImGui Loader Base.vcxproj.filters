@@ -23,6 +23,7 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="ui\ui.cc" />
     <ClCompile Include="Clicker\Autoclicker.cpp" />
+    <ClCompile Include="Clicker\PatternManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h">
@@ -53,6 +54,7 @@
     <ClInclude Include="ui\ui.hh" />
     <ClInclude Include="globals.hh" />
     <ClInclude Include="Clicker\Autoclicker.h" />
+    <ClInclude Include="Clicker\PatternManager.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="imgui">
